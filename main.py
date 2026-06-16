@@ -91,7 +91,7 @@ def senha_valida(senha):
 # 🐛 BUG: a comparação está invertida
 def maior_numero(a, b):
     """Retorna o maior número entre a e b."""
-    if a < b:  # BUG: deveria ser a > b
+    if a > b:  # BUG: deveria ser a > b
         return a
     else:
         return b
@@ -158,7 +158,6 @@ def somar_lista(numeros):
     return total
 
 # Função 18 - Retorna o maior valor de uma lista
-# 🐛 BUG: está retornando o menor valor, não o maior
 def maior_da_lista(numeros):
     """Retorna o maior número de uma lista."""
     return max(numeros)  # BUG: deveria ser max(numeros)
