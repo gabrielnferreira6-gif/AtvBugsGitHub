@@ -61,10 +61,9 @@ def par_ou_impar(numero):
         return "ímpar"
 
 # Função 7 - Verifica se o aluno foi aprovado (média >= 6)
-# 🐛 BUG: a condição de aprovação está errada
 def verificar_aprovacao(media):
     """Retorna True se o aluno foi aprovado (média >= 6)."""
-    if media >= 9:  # BUG: deveria ser >= 6
+    if media >= 6:  # BUG: deveria ser >= 6
         return True
     else:
         return False
@@ -88,7 +87,6 @@ def senha_valida(senha):
         return False
 
 # Função 10 - Retorna o maior de dois números
-# 🐛 BUG: a comparação está invertida
 def maior_numero(a, b):
     """Retorna o maior número entre a e b."""
     if a > b:  # BUG: deveria ser a > b
