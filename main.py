@@ -116,7 +116,6 @@ def inverter_texto(texto):
     return texto[::-1]
 
 # Função 14 - Verifica se uma palavra é um palíndromo (ex: "arara")
-# 🐛 BUG: a comparação está errada
 def eh_palindromo(palavra):
     """Retorna True se a palavra for um palíndromo."""
     palavra = palavra.lower()
@@ -229,7 +228,7 @@ def exibir_boletim(aluno):
 # 🐛 BUG: a fórmula está errada
 def celsius_para_fahrenheit(celsius):
     """Converte graus Celsius para Fahrenheit. Fórmula: (C * 9/5) + 32"""
-    return (celsius * 5 / 9) + 32  # BUG: deveria ser (celsius * 9/5) + 32
+    return (celsius * 9 / 5) + 32  # BUG: deveria ser (celsius * 9/5) + 32
 
 # Função 27 - Calcula o IMC de uma pessoa
 def calcular_imc(peso, altura):
