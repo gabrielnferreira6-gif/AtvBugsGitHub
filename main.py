@@ -192,7 +192,6 @@ def cadastrar_aluno(nome, idade, turma):
     return aluno
 
 # Função 22 - Retorna o nome do aluno de um dicionário
-# 🐛 BUG: a chave está errada
 def obter_nome(aluno):
     """Retorna o nome do aluno a partir do dicionário."""
     return aluno["nomes"]  # BUG: a chave correta é "nome"
@@ -225,7 +224,6 @@ def exibir_boletim(aluno):
 # ------------------------------------------------------------
 
 # Função 26 - Converte temperatura de Celsius para Fahrenheit
-# 🐛 BUG: a fórmula está errada
 def celsius_para_fahrenheit(celsius):
     """Converte graus Celsius para Fahrenheit. Fórmula: (C * 9/5) + 32"""
     return (celsius * 9 / 5) + 32  # BUG: deveria ser (celsius * 9/5) + 32
